@@ -1,0 +1,96 @@
+section.weeks, section.settings, section.forum-outer
+    position: relative
+
+    .border
+        position: absolute
+        height: 70px
+        width: 100%
+        border-bottom: 2px solid #f4f4f4
+        top: -70px
+        transition: all 1000ms cubic-bezier(0.215, 0.61, 0.355, 1)
+
+        &.loaded
+            top: 0
+
+    ul.nav
+        border-bottom: none
+        height: 70px
+        margin-left: 62px
+        position: relative
+        top: -72px
+        transition: all 1000ms cubic-bezier(0.215, 0.61, 0.355, 1)
+
+        &.loaded
+            top: 0
+
+        li
+            margin-left: 30px
+            margin-bottom: 0
+            height: 70px
+
+            &:first-child
+                margin-left: 0
+
+            a
+                color: black
+                letter-spacing: 2.2px
+                line-height: 28px
+                font-weight: 500
+                text-transform: uppercase
+                border: none
+                border-radius: 0
+                padding: 20px 0px
+                font-size: 13px
+                margin: 0
+                opacity: 0.3
+                background-color: transparent
+                text-indent: 2.5px
+                border: none
+                transition: all 400ms ease
+
+                &:hover, &:active, &:focus
+                    opacity: 1
+                    border: none
+                    box-shadow: 0 2px 0 0 #f86161
+
+            &.active a
+                opacity: 1
+                box-shadow: 0 2px 0 0 #f86161
+                text-indent: 2.5px
+
+                &:hover, &:active, &:focus
+                    background-color: white
+
+            &.organize-lessons
+                float: right
+                margin-left: 0
+                margin-right: 25px
+                border-left: 2px solid #f4f4f4
+                border-bottom: 2px solid #f4f4f4
+
+                .dropdown button
+                    border: none
+                    background-color: white
+                    color: black
+                    letter-spacing: 1.1px
+                    font-weight: 500
+                    text-transform: uppercase
+                    line-height: 68px
+                    margin-left: 25px
+                    outline: none
+                    font-size: 12px
+                    height: 68px
+
+                    span.icon-icon-caret
+                        margin-left: 10px
+                        top: -1.5px
+                        position: relative
+                        font-size: 7px
+
+
+section.settings, section.forum-outer
+    .container ul.nav
+        margin-left: 0
+
+        li
+            margin-left: 30px

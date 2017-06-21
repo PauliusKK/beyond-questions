@@ -1,0 +1,308 @@
+.md-modal
+    .md-content
+        width: 100%
+        height: calc(100% - 140px)
+
+
+        // Skip question or Replay video button at the bottom right of the modal.
+        .skip-question, .replay-video
+            position: absolute
+            right: 35px
+            bottom: 35px
+
+            button
+                font-size: 10px
+                letter-spacing: 1.1px
+                color: #7c7c7c
+                font-weight: bold
+                text-transform: uppercase
+                box-shadow: none
+                border: none
+                background-color: transparent
+                outline: none
+
+                span
+                    float: left
+
+            button.replay-video-button
+                font-size: 13px
+
+                span
+                    font-size: 28px
+                    position: relative
+                    top: -6px
+                    right: 10px
+
+
+        .modal-container
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+
+            .container
+                width: 65%
+                padding: 0
+
+                // Text changes in the modal container
+                p.question-number
+                    font-size: 13px
+                    font-weight: bold
+                    letter-spacing: 0.5px
+                    color: #7c7c7c
+                    text-align: left
+                    margin: 0
+                    padding: 0
+                    text-transform: uppercase
+
+                p.test-description
+                    text-align: center
+
+                p.explanation, p.test-description
+                    margin-top: 20px
+                    font-size: 17px
+                    font-weight: 400
+                    line-height: 1.59
+                    color: black
+
+                h1
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 0.83
+                    letter-spacing: 1.2px
+                    color: black
+                    text-transform: uppercase
+                    text-align: center
+                    margin-top: 40px
+
+                h2
+                    font-size: 28px
+                    font-weight: 400
+                    line-height: 1.29
+                    letter-spacing: 0.1px
+                    color: black
+
+                h3
+                    font-size: 13px
+                    font-weight: bold
+                    letter-spacing: 2.2px
+                    color: #6a6a6a
+                    text-align: center
+                    text-transform: uppercase
+                    margin-top: 0
+
+                    span
+                        margin-right: 15px
+                        font-size: 31px
+                        position: relative
+                        top: 7px
+
+                h5
+                    font-size: 15px
+                    font-weight: 500
+                    line-height: 3.27
+                    letter-spacing: 0.3px
+                    color: black
+                    position: relative
+                    top: -10px
+                    left: 25px
+                    z-index: 10
+
+                textarea
+                    border: solid 1px #d7d7d7
+                    color: #bbbbbb
+                    font-size: 16px
+                    font-weight: 400
+                    width: 100%
+                    padding: 15px
+                    resize: none
+                    outline: none
+                    margin-top: 25px
+
+                    &::placeholder
+                        line-height: 1.38
+                        letter-spacing: 0px
+                        color: #7f7f7f
+                        font-weight: 400
+                        font-size: 16px
+
+                // Button changes in the modal container
+                button.start-test, button.submit-answer, button.select-answer
+                    color: white
+                    background-color: black
+                    box-shadow: 0 2px 4px 0 rgba(153, 153, 153, 0.5)
+                    letter-spacing: 0.3px
+                    border: none
+
+                button.start-test
+                    border: solid 1px #1a1a1a
+                    font-size: 18px
+                    display: block
+                    box-shadow: none
+                    line-height: 1.11
+                    letter-spacing: 4.5px
+                    font-weight: bold
+                    padding: 25px 65px
+                    margin: 0 auto
+                    margin-top: 35px
+                    text-transform: uppercase
+
+                button.submit-answer
+                    line-height: 1.41
+                    font-size: 17px
+                    font-weight: 400
+                    padding: 15px 110px
+                    float: left
+                    margin-top: 25px
+                    text-transform: uppercase
+
+                button.select-answer
+                    font-size: 15px
+                    font-weight: 400
+                    line-height: 1.6
+                    padding: 12px 80px
+                    margin-bottom: 20px
+                    width: 280px
+                    white-space: nowrap
+
+                    span
+                        float: left
+                        top: 3px
+
+                    span.letter
+                        opacity: 0.6
+                        margin-left: -20px
+
+                    span.approved-icon
+                        margin-left: -25px
+                        margin-top: 4px
+
+                    span.replay-icon
+                        float: right
+                        margin-right: -10px
+                        margin-top: 5px
+
+                button.re-watch
+                    padding: 12px 65px
+
+
+                .black
+                    background-color: black !important
+
+                .wrong
+                    background-color: #c74e4e !important
+
+                .correct
+                    background-color: #73be81 !important
+
+
+                .buttons
+                    margin-top: 25px
+
+                    div
+                        width: 50%
+                        float: left
+                        max-width: 280px
+
+                    div:nth-child(even)
+                        float: right
+
+                .col-lg-6:nth-child(odd)
+                    padding-left: 0
+
+
+                .answer-box
+                    background-color: #f2f2f2
+                    margin-top: 30px
+                    width: 92%
+
+                    p
+                        font-size: 16px
+                        font-weight: 400
+                        line-height: 1.38
+                        letter-spacing: 0px
+                        color: #616161
+                        padding: 25px 15px 90px 30px
+
+                .feedback
+                    width: 100%
+                    position: relative
+
+                    span, .text-right
+                        position: absolute
+                        top: 12px
+                        text-transform: uppercase
+                        font-size: 12px
+                        font-weight: 500
+                        line-height: 1.67
+                        letter-spacing: 3px
+                        color: black
+
+                    span.text-left
+                        left: -200px
+
+                    span.text-right
+                        right: -100px
+
+                    .numbers ul
+                        margin-top: 55px
+
+                        li.text-right
+                            position: relative
+                            margin-left: 50px
+                            display: none
+
+                        li.circle
+                            border-radius: 100%
+                            font-size: 18px
+                            font-weight: 500
+                            line-height: 1.11
+                            letter-spacing: 0px
+                            color: white
+                            text-align: center
+                            background-color: #1d1d1d
+                            height: 43px
+                            width: 43px
+                            line-height: 43px
+                            margin-left: 6px
+
+                            &:hover, &:focus, &:active
+                                background-color: #3a3a3a
+                                cursor: pointer
+
+
+                .quiz-answers
+                    margin-top: 45px
+                    width: 92%
+
+                    .answer
+                        margin-top: -12px
+
+                        .select-answer
+                            float: left
+
+                            .yes, .no
+                                width: 48px
+                                height: 25px
+                                background-color: black
+                                float: left
+                                text-transform: uppercase
+                                text-align: center
+                                color: white
+                                padding: 3px
+                                letter-spacing: 1px
+                                font-size: 12px
+                                font-weight: bold
+                                cursor: pointer
+
+                            .no
+                                margin-left: 5px
+
+                        a
+                            font-size: 15px
+                            font-weight: 700
+                            line-height: 3.19
+                            letter-spacing: 0.3px
+                            color: #b5b5b5
+                            text-decoration: underline
+                            float: right
+                            margin-right: 25px

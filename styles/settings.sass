@@ -1,0 +1,105 @@
+.form-container
+    max-width: 500px
+
+    .checkbox-div
+        label.checkbox-label
+            cursor: pointer
+            color: black
+
+            input
+                display: none
+
+            span.checkbox
+                height: 22px
+                width: 22px
+                border: solid 1px #d7d7d7
+                position: relative
+                float: left
+
+            span.text
+                position: relative
+                top: 13px
+                left: 15px
+                text-transform: uppercase
+                font-size: 11px
+                font-weight: 500
+                letter-spacing: 1.8px
+                color: black
+
+            [type=checkbox]:checked + span.checkbox:before
+                content: '\2714'
+                position: absolute
+                top: -2px
+                left: 3px
+                font-size: 16px
+
+
+    h5
+        font-size: 14px
+        font-weight: bold
+        line-height: 1.43
+        letter-spacing: 2.2px
+        color: black
+        text-transform: uppercase
+        border-bottom: 2px solid #e7e7e7
+        padding-bottom: 2px
+        margin-top: 30px
+        margin-bottom: 30px
+
+    button.btn-form-green
+        width: 100%
+        box-shadow: none
+        background-color: #48b781
+        color: white
+        font-size: 17px
+        font-weight: bold
+        letter-spacing: 2.6px
+        border: none
+        height: 65px
+        text-transform: uppercase
+        margin-top: 25px
+        line-height: 65px
+        transition: all 0.3s
+        margin-bottom: 35px
+
+        &:active, &:focus, &:hover
+            background-color: #44ae7b
+
+    .input-field#first_name, .input-field#last_name
+        float: left
+        width: 241px
+
+    .input-field#last_name
+        margin-left: 18px
+
+    .image-container
+        float: left
+        width: 100%
+        margin-bottom: 20px
+        margin-top: 15px
+
+        .image
+            width: 65px
+            height: 65px
+            border-radius: 100%
+            background-color: #4d4d4d
+            float: left
+            margin-left: 5px
+
+        button.upload
+            background-color: white
+            border: 1px solid #d4d4d4
+            color: black
+            letter-spacing: 2.2px
+            line-height: 1.43
+            font-weight: 500
+            font-size: 14px
+            text-transform: uppercase
+            height: 65px
+            float: right
+            padding: 0 100px
+
+            i
+                float: left
+                margin-right: 15px
+                font-size: 16px

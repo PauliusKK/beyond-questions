@@ -1,0 +1,213 @@
+section.no-payment, section.upgrade-premium
+    height: 100%
+    display: flex
+    min-height: 100vh
+
+    .left-side
+        flex: 1
+        float: left
+
+    .right-side
+        float: left
+
+        .container
+            max-width: 500px
+            padding: 0
+            margin-top: 160px
+            position: relative
+
+            h2
+                font-size: 48px
+                font-weight: 500
+                color: black
+                margin: 0
+
+            h3
+                font-size: 21px
+                font-weight: 400
+                color: black
+                margin: 0
+                margin-top: 10px
+
+            .gray-background
+                background-color: #f4f4f4
+                margin-top: 60px
+
+                h4
+                    color: black
+                    text-align: center
+                    font-size: 19px
+                    font-weight: 400
+                    line-height: 1.5
+                    padding: 25px 0
+
+            .select-card
+                height: 50px
+                border: 1px solid #e6e6e6
+                width: 275px
+                position: relative
+                margin-top: 20px
+                float: left
+                margin-bottom: 15px
+
+                img
+                    height: 30px
+                    margin-right: 5px
+                    border: 1px solid #e6e6e6
+                    border-radius: 5px
+                    width: 45px
+                    position: relative
+                    transform: translateY(-50%)
+                    top: 50%
+                    transition: all 0.3s
+                    box-shadow: none
+
+                    &:hover, &:active, &:focus
+                        box-shadow: 0 0 5px #e6e6e6
+                        cursor: pointer
+
+                img:nth-child(2)
+                    margin-left: 55px
+
+                .round-button
+                    border-radius: 100%
+                    border: 8px solid #4ea0bf
+                    background-color: white
+                    width: 20px
+                    height: 20px
+                    margin: auto
+                    position: absolute
+                    top: 0
+                    left: 18px
+                    bottom: 0
+
+            .select-paypal
+                background-color: #008bca
+                border-radius: 5px
+                height: 45px
+                width: 175px
+                float: right
+                margin-top: 23px
+                transition: all 0.3s
+
+                &:active, &:focus, &:hover
+                    background-color: #0285c1
+                    cursor: pointer
+
+            .input-field
+                height: 50px
+
+                label
+                    font-size: 16px
+                    color: #5c5c5c
+                    text-transform: none
+                    font-weight: 400
+                    top: 12px
+
+                label.active
+                    font-size: 12px
+
+            .input-field#card_name
+                float: left
+                width: 380px
+
+            .input-field#cvv
+                width: 100px
+                float: right
+                margin-bottom: 30px
+
+
+            button.btn-process-order
+                display: block
+                background-color: #6ec671
+                border-radius: 11px
+                height: 70px
+                line-height: 70px
+                color: white
+                box-shadow: none
+                border: none
+                font-size: 28px
+                letter-spacing: 0.8px
+                text-align: center
+                font-weight: 500
+                width: 100%
+                padding-left: 40px
+                text-transform: uppercase
+                transition: all 0.3s
+
+                &:active, &:focus, &:hover
+                    background-color: #68bd6b
+
+                i
+                    float: right
+                    line-height: 65px
+                    margin-right: 40px
+
+            p
+                font-size: 15px
+                font-weight: 400
+                color: black
+                text-align: center
+                margin-top: 15px
+
+section.no-payment
+    .left-side
+        background: url(../images/poker.jpg)
+        background-size: cover
+        width: 33%
+
+    .right-side
+        width: 67%
+
+section.upgrade-premium
+    .left-side
+        width: 45%
+        background-color: #fafafa
+        position: relative
+
+        .triangle
+            transform: rotate(-315deg)
+            background-color: #fafafa
+            width: 92px
+            height: 92px
+            position: absolute
+            right: -20px
+            top: 160px
+            z-index: -1
+
+        .container
+            max-width: 465px
+            margin-top: 85px
+
+            img.video
+                width: 100%
+                height: 100%
+                margin-bottom: 65px
+
+            h5
+                font-size: 14px
+                font-weight: bold
+                color: black
+                letter-spacing: 1px
+                text-transform: uppercase
+                white-space: nowrap
+                font-style: normal
+                font-stretch: normal
+                padding: 0
+                margin: 0
+                margin-bottom: 10px
+
+            p
+                font-size: 15px
+                font-weight: 400
+                line-height: 1.67
+                color: #8d8d8d
+                letter-spacing: 0.1px
+                margin-bottom: 30px
+
+
+    .right-side
+        width: 55%
+
+        .container
+            margin-top: 115px

@@ -1,0 +1,61 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+        include ../mixins/mixins
+
+        // navigation and header
+        include ../mixins/navigation
+        section.content
+            +site-heading("notifications")
+
+            // Main part of the website, it contains all the stuff and has a great functionality of clicking on the each tab.
+            section.forum-outer
+
+                .border
+
+                .container
+
+                    ul.nav.nav-tabs.weeks-nav
+                        li(role="presentation"): a(href="#new-week", aria-controls="new-week", role="tab", data-toggle="tab") New
+
+                        li.active(role="presentation"): a(href="#week-1", aria-controls="week-1", role="tab", data-toggle="tab") Week 1
+
+                        // Last list item, which has a float of right and contains a dropdown, so you're able to organize the lessons by time or any other way.
+                        li.organize-lessons
+                            button.new-post <i class="icon-icon-plus"></i> Add a new post
+
+                    .tab-content
+                        #new-week.tab-pane.fade(role="tabpanel")
+
+                        #week-1.tab-pane.fade.in.active(role="tabpanel")
+
+                            .add-new-post
+                                .picture: img(src="../images/drake.jpg", alt="")
+
+                                .inputs
+                                    input.title(type="text", placeholder="Title")
+                                    textarea.post(placeholder="Post", rows="10")
+
+                                button.add-video(type="button") Add a video
+                                    i.icon-icon-player
+
+                                .post-container: button.submit-post(type="button") Submit Post
+
+                            .forum-posts-container
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+                                +forum-post
+
+
+        include ../mixins/footer

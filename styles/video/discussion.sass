@@ -1,0 +1,185 @@
+section.video-content
+    section.discussion
+        background-color: white
+
+        .container
+
+            button.add-comment
+                border: solid 3px black
+                font-size: 15px
+                font-weight: bold
+                letter-spacing: 2px
+                color: black
+                background-color: white
+                text-transform: uppercase
+                padding: 15px 60px
+                display: block
+                margin: 0 auto
+                margin-top: 50px
+
+                span
+                    color: black
+                    float: left
+                    position: relative
+                    top: 1px
+                    padding-right: 10px
+                    font-size: 17px
+
+
+            .comments
+                margin-top: 90px
+                margin-left: 155px
+
+                .comment
+                    margin-bottom: 70px
+
+                    .comment
+                        margin-left: 45px
+                        margin-top: 70px
+
+                    .avatar
+                        float: left
+
+                        img
+                            width: 79px
+                            height: 79px
+                            border-radius: 100%
+                            display: block
+                            margin: 0 auto
+
+                        span
+                            display: block
+                            position: relative
+                            font-size: 11px
+                            font-weight: bold
+                            letter-spacing: 0.7px
+                            color: black
+                            text-transform: uppercase
+                            text-align: center
+                            top: 10px
+
+                    .admin
+                        img
+                            border: solid 1px #e76060
+
+                        span
+                            color: #e43c3c
+
+
+                    .description
+                        margin-left: 134px
+
+                        h5, h6
+                            text-transform: uppercase
+                            color: black
+                            font-weight: bold
+
+                        h5
+                            letter-spacing: 1px
+                            font-size: 11px
+
+                        h6
+                            font-size: 12px
+                            font-weight: bold
+
+                            span
+                                cursor: pointer
+
+                        p
+                            font-size: 17px
+                            line-height: 1.59
+                            color: #444
+                            font-weight: 400
+                            margin-right: 170px
+
+    section.discussion .reply
+        margin-top: 20px
+        width: 78%
+
+    section.submit-comment
+        background-color: white
+        padding-bottom: 145px
+        border-top: solid 1px #dedede
+        margin-top: -5px
+
+        .reply
+            margin-top: 20px
+            margin-left: 180px
+            margin-right: 170px
+            margin-top: 120px
+
+    section.submit-comment, section.discussion
+
+        .reply
+            p
+                font-size: 11px
+                font-weight: 500
+                letter-spacing: 0.1px
+                color: #a9a9a9
+                text-transform: uppercase
+                float: right
+                margin-right: 5px
+
+                span
+                    color: #c9c9c9
+                    margin-left: 5px
+                    font-size: 17px
+                    position: relative
+                    top: 3px
+                    cursor: pointer
+                    left: 5px
+
+            textarea
+                border: solid 1px #d7d7d7
+                color: #bbbbbb
+                font-size: 17px
+                font-weight: 400
+                width: 100%
+                padding: 15px
+                resize: none
+                outline: none
+
+            label
+                display: block
+                cursor: pointer
+
+                input
+                    display: none
+
+                span.checkbox
+                    height: 17px
+                    width: 17px
+                    border: solid 1px #d7d7d7
+                    position: relative
+                    float: left
+
+                span.text
+                    position: relative
+                    top: 9px
+                    left: 15px
+                    text-transform: uppercase
+                    font-size: 11px
+                    font-weight: 500
+                    letter-spacing: 1.8px
+                    color: black
+
+                [type=checkbox]:checked + span.checkbox:before
+                    content: '\2714'
+                    position: absolute
+                    top: -3px
+                    left: 2px
+
+
+            button.submit-reply
+                margin-top: 8px
+                background-color: black
+                width: 100%
+                box-shadow: none
+                border: none
+                line-height: 60px
+                color: white
+                letter-spacing: 2.7px
+                font-size: 16px
+                font-weight: 400
+                text-transform: uppercase
+                outline: none

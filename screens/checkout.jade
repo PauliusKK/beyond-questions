@@ -1,0 +1,97 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+        style(type="text/css").
+            body {
+                background-color: #fbfbfb
+            }
+
+            * {
+                font-family: 'Proxima Nova', sans-serif
+            }
+
+    body
+        include ../mixins/mixins
+
+        header.checkout-header
+            .container
+                img(src="../images/half-chip-two.png", alt="Logo Chip")
+                h3 You are 11 seconds away from the biggest change in your poker.
+                p Just add your payment information and login details, and you can being the course!
+
+        section.checkout-body
+            .container
+
+                .credentials
+                    .login-details
+                        h5 Step 1: Create your login details
+                        +input-field('details-email', 'email', 'Your E-mail')
+                        +input-field('details-password', 'password', 'Create a Password')
+                        +input-field('confirm-password', 'password', 'Confirm your Password')
+
+                    .payment-information
+                        h5 Step 2: Enter payment information
+
+                        .select-payment
+                            .credit-card
+                                .round-button
+                                img(src="../images/visa-blue.png", alt="")
+                                img(src="../images/mastercard-blue.png", alt="")
+                                img(src="../images/amex.png", alt="")
+                                img(src="../images/discover.png", alt="")
+
+                            .paypal
+                                .round-button
+                                img(src="../images/paypal-button.png", alt="")
+
+                        .card-credentials
+                            +input-field('card-number', 'text', 'Card Number')
+                            +input-field('card-name', 'text', 'Name on Card')
+                            +input-field('card-expiration', 'text', 'MM/YY')
+                            +input-field('card-cvv', 'text', 'CVV')
+
+                .checkout-cart
+                    header
+                        h4 The Cash Game Fix
+                        h6 Premium Access
+
+                    section.payments
+                        ul.nav.nav-tabs
+                            li.active(role="presentation"): a(href="#one-payment", aria-controls="one-payment", role="tab", data-toggle="tab") One Payment
+                                span SAVE 20%
+
+                            li(role="presentation"): a(href="#monthly-payments", aria-controls="monthly-payments", role="tab", data-toggle="tab") Monthly Payments
+
+                        .tab-content
+                            #one-payment.tab-pane.fade.in.active(role="tabpanel")
+                                h5 Total Price:
+                                    span $995
+
+                                p.price-description You signed up for a lifetime access. You won't be billed again and will have lifetime access to all content inside of The Cash Game Fix
+
+                                .amount-billed-today: h3 Amount Billed Today
+                                    span $995
+
+                                p.money-back All our courses are backed by our 30 day 100% Money Back Guarantee
+
+                            #monthly-payments.tab-pane.fade(role="tabpanel")
+                                // Put something here...
+
+                .process-order-things
+                    .checkbox-div: +checkbox-label("I accept Terms of Service")
+                    button.btn-process-order Process Order
+
+                    h4 30-Day money back guarantee
+                    p All our courses come with a 30 day money back guarantee. At anytime in the 30-day window just ask us for a refund and we will give it to you.
+
+
+        footer.checkout-footer
+            ul.list-inline
+                li: a(href="") Contact Us
+                li: a(href="") Privacy Policy
+                li: a(href="") Disclaimer
+
+
+        include ../mixins/footer

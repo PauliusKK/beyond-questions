@@ -1,0 +1,43 @@
+// Video screen header and full video styles
+section.video-content section.full-height-video
+    height: 100vh
+    position: relative
+
+    header.main-header
+        margin-top: 10px
+
+    // Wistia video styles
+    .wistia-video
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        right: 0
+        margin: auto
+        max-width: 1280px
+        max-height: 720px
+        width: 70%
+
+    // Footer, which stores the discuss button styles.
+    footer
+        position: absolute
+        bottom: 0
+        width: 100%
+
+        p
+            font-size: 14px
+            font-weight: 400
+            letter-spacing: 2.3px
+            text-align: center
+            color: white
+            text-transform: uppercase
+            padding-bottom: 15px
+            cursor: pointer
+
+            i
+                transform: rotate(90deg)
+                margin-top: 10px
+                display: inline-block
+                position: relative
+                right: 4px
+                font-size: 18px

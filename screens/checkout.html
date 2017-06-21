@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beyond Tells</title>
+    <!-- START of LINKS-->
+    <!-- Normalize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <!-- BootstrapCSS 3.3.7-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- START of FONTS-->
+    <!-- Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- END of FONTS-->
+    <!-- Main CSS file-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- END of LINKS-->
+    <style type="text/css">
+      body {
+          background-color: #fbfbfb
+      }
+      
+      * {
+          font-family: 'Proxima Nova', sans-serif
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header class="checkout-header">
+      <div class="container"><img src="../images/half-chip-two.png" alt="Logo Chip">
+        <h3>You are 11 seconds away from the biggest change in your poker.</h3>
+        <p>Just add your payment information and login details, and you can being the course!</p>
+      </div>
+    </header>
+    <section class="checkout-body">
+      <div class="container">
+        <div class="credentials">
+          <div class="login-details">
+            <h5>Step 1: Create your login details</h5>
+                <div id="details-email" class="input-field">
+                  <input id="details-email" name="details-email" type="email" class="validate">
+                  <label for="details-email">Your E-mail</label>
+                </div>
+                <div id="details-password" class="input-field">
+                  <input id="details-password" name="details-password" type="password" class="validate">
+                  <label for="details-password">Create a Password</label>
+                </div>
+                <div id="confirm-password" class="input-field">
+                  <input id="confirm-password" name="confirm-password" type="password" class="validate">
+                  <label for="confirm-password">Confirm your Password</label>
+                </div>
+          </div>
+          <div class="payment-information">
+            <h5>Step 2: Enter payment information</h5>
+            <div class="select-payment">
+              <div class="credit-card">
+                <div class="round-button"></div><img src="../images/visa-blue.png" alt=""><img src="../images/mastercard-blue.png" alt=""><img src="../images/amex.png" alt=""><img src="../images/discover.png" alt="">
+              </div>
+              <div class="paypal">
+                <div class="round-button"></div><img src="../images/paypal-button.png" alt="">
+              </div>
+            </div>
+            <div class="card-credentials">
+                  <div id="card-number" class="input-field">
+                    <input id="card-number" name="card-number" type="text" class="validate">
+                    <label for="card-number">Card Number</label>
+                  </div>
+                  <div id="card-name" class="input-field">
+                    <input id="card-name" name="card-name" type="text" class="validate">
+                    <label for="card-name">Name on Card</label>
+                  </div>
+                  <div id="card-expiration" class="input-field">
+                    <input id="card-expiration" name="card-expiration" type="text" class="validate">
+                    <label for="card-expiration">MM/YY</label>
+                  </div>
+                  <div id="card-cvv" class="input-field">
+                    <input id="card-cvv" name="card-cvv" type="text" class="validate">
+                    <label for="card-cvv">CVV</label>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-cart">
+          <header>
+            <h4>The Cash Game Fix</h4>
+            <h6>Premium Access</h6>
+          </header>
+          <section class="payments">
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#one-payment" aria-controls="one-payment" role="tab" data-toggle="tab">One Payment<span>SAVE 20%</span></a></li>
+              <li role="presentation"><a href="#monthly-payments" aria-controls="monthly-payments" role="tab" data-toggle="tab">Monthly Payments</a></li>
+            </ul>
+            <div class="tab-content">
+              <div id="one-payment" role="tabpanel" class="tab-pane fade in active">
+                <h5>Total Price:<span>$995</span></h5>
+                <p class="price-description">You signed up for a lifetime access. You won't be billed again and will have lifetime access to all content inside of The Cash Game Fix</p>
+                <div class="amount-billed-today">
+                  <h3>Amount Billed Today<span>$995</span></h3>
+                </div>
+                <p class="money-back">All our courses are backed by our 30 day 100% Money Back Guarantee</p>
+              </div>
+              <div id="monthly-payments" role="tabpanel" class="tab-pane fade">
+                <!-- Put something here...-->
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="process-order-things">
+          <div class="checkbox-div">
+                <label class="checkbox-label">
+                  <input type="checkbox"><span class="checkbox"></span><span class="text">I accept Terms of Service</span>
+                </label>
+          </div>
+          <button class="btn-process-order">Process Order</button>
+          <h4>30-Day money back guarantee</h4>
+          <p>All our courses come with a 30 day money back guarantee. At anytime in the 30-day window just ask us for a refund and we will give it to you.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="checkout-footer">
+      <ul class="list-inline">
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Disclaimer</a></li>
+      </ul>
+    </footer>
+    <!-- jQuery 3.1.1-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- BootstrapJS 3.3.7-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Main JS-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

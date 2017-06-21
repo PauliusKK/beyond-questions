@@ -1,0 +1,118 @@
+@media screen and (max-width: 767px) and (min-width: 550px)
+    section.checkout-body .container .credentials .payment-information .select-payment
+                    .credit-card
+                        width: 53%
+
+                    .paypal
+                        width: 47%
+
+                        .round-button
+                            left: 18px
+
+                        img
+                            margin-left: 55px
+                            float: left
+
+
+@media screen and (max-width: 549px)
+    section.checkout-body .container .credentials
+        .payment-information
+            margin-top: 25px
+
+            .select-payment
+                height: 105px
+
+                .credit-card
+                    width: 100%
+
+                .paypal
+                    width: 100%
+
+                    .round-button
+                        left: 18px
+
+                    img
+                        margin-left: 55px
+                        float: left
+
+        .card-credentials
+            .input-field#card-number, .input-field#card-name
+                width: 100% !important
+                max-width: none !important
+
+            .input-field#card-expiration, .input-field#card-cvv
+                width: 45% !important
+                max-width: none !important
+                margin: 0 !important
+                margin-top: 10px !important
+
+
+@media screen and (max-width: 767px)
+    section.checkout-body .container
+        max-width: 95%
+        padding: 0 15px
+        position: relative
+
+        .credentials
+            width: 100%
+            float: none
+            display: block
+            margin: 0 auto
+            position: static
+            margin-top: 30px
+
+            h5
+                line-height: 1.5
+
+        .checkout-cart
+            width: 100%
+            float: none
+            display: block
+            margin-left: auto
+            margin-right: auto
+            margin-top: 50px
+            max-width: 480px
+            margin-bottom: 30px
+
+            section.payments
+                padding: 0 15px
+                max-width: 400px
+
+                ul.nav li
+                    display: block
+                    width: 100%
+                    margin: 0 !important
+
+                    &:nth-child(2)
+                        margin-bottom: 25px !important
+
+                .tab-content .tab-pane
+
+                    .amount-billed-today h3
+                        margin-left: 10px
+
+                        span
+                            margin-right: 10px
+
+                    p.money-back
+                        margin-bottom: 25px
+
+
+        .process-order-things
+            display: block
+            margin: 0 auto
+            margin-bottom: 50px
+
+            h4
+                white-space: normal
+
+    footer.checkout-footer
+        height: auto
+
+        ul li
+            display: block
+            margin: 0 !important
+
+            a
+                text-align: center
+                line-height: 60px

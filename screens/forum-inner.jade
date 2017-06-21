@@ -1,0 +1,76 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+        include ../mixins/mixins
+
+        // navigation and header
+        include ../mixins/navigation
+        section.content
+            +site-heading("forum")
+
+            section.forum-inner
+                .container
+                    button.back Back to main forum
+                        i.icon-icon-arrow-left
+
+                    .topic
+                        .post
+                            header
+                                i.icon-star
+                                img(src="../images/drake.jpg", alt="Profile Picture")
+
+                                h1 Welcome to Beyond Tells 2.0
+                                h4 Posted by Blake - 17 comments
+
+
+                            p.description Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, call. Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls \. Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls \. Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls.
+
+                            h6.reply reply / like
+
+
+                        .comment-under-post
+                            .avatar
+                                img(src="../images/drake.jpg", alt="Profile Picture")
+                                span John Billow
+
+                            .description
+                                p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls.
+
+                                h6.reply reply / like
+
+                        .comment-under-post
+                            .avatar
+                                img(src="../images/drake.jpg", alt="Profile Picture")
+                                span John Billow
+
+                            .description
+                                p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls.
+
+                                h6.reply reply / like
+
+
+                        .comment
+                            .avatar
+                                img(src="../images/drake.jpg", alt="Profile Picture")
+                                span John Pices
+
+                            .description
+                                p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls. Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls. Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films
+
+                                h6.reply reply / like
+
+
+                        .submit-comment
+                            .avatar
+                                img(src="../images/drake.jpg", alt="Profile Picture")
+                                span John Pices
+
+                            .reply
+                                textarea(rows="6", placeholder="Say something...")
+                                button.submit-reply(type="submit") Submit comment
+
+
+        include ../mixins/footer

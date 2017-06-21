@@ -1,0 +1,29 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+        include ../mixins/mixins
+
+        section.login
+            .left-side.red-background
+                img(src="../images/half-chip.png", alt="Half chip")
+                img.text(src="../images/school-of-cards.png", alt="Logo text")
+
+            .right-side
+
+                .container
+                    h2 Login to Your School of Cards Course
+
+                    form.login-form
+                        +input-field('email', 'email', 'Email')
+                        +input-field('password', 'password', 'Password')
+
+                        button.login-cards.login(type="submit") Login
+
+                    a.forgot-password(href="") Forgot your password?
+                    a.register(href="") Don’t have an account? Learn more here
+
+
+        include ../mixins/footer

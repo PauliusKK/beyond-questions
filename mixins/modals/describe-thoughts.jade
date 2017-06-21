@@ -1,0 +1,29 @@
+.md-modal.md-effect-12.modal-describe-thoughts
+
+    include ../navigation
+
+    section.content
+
+        +modal-header("The most important moment for poker tells")
+
+        .md-content
+            .modal-container
+
+                .container
+                    p.question-number 1 / 10
+
+                    h2 Based on what you are seeing what is the most probable outcome for what you are seeing?
+
+                    textarea.unanswered-textarea(rows="6", placeholder="Well.. I think that he is doing this because he probably has a strong delayed...")
+
+                    button.md-close.submit-answer Submit
+
+                    .skip-question.visible-xs: button Skip Question
+
+            .skip-question.hidden-xs: button Skip Question
+
+
+        +modal-footer()
+
+
+.md-overlay

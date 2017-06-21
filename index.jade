@@ -1,0 +1,151 @@
+doctype html
+html(lang='en-US')
+    head
+        include mixins/head
+
+        // Animate.css
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+
+        // Main CSS file
+        link(rel="stylesheet", href="styles/main.css")
+
+    body
+
+        include mixins/mixins
+
+        // MODALS
+        include mixins/modals/premium
+        include mixins/modals/coming-soon
+
+        //- .appearing-notification
+        //-     .border
+        //-     i.icon-icon-bell
+        //-     h5 You received a reply from blake eastman
+        //-         span view
+
+        //-     button.btn-exit
+        //-         i.icon-icon-fat-close
+
+        // navigation and header
+        include mixins/navigation
+
+        section.content
+            +site-heading("index")
+
+            // Main part of the website, it contains all the stuff and has a great functionality of clicking on the each week.
+            section.weeks
+                .border
+
+                // Navigation tabs that contains buttons with weeks. If you click on one of those buttons, you will see another week.
+                ul.nav.nav-tabs.weeks-nav
+                    li.active(role="presentation"): a(href="#week1", aria-controls="week1", role="tab", data-toggle="tab") Week 1
+                    li(role="presentation"): a(href="#week2", aria-controls="week2", role="tab", data-toggle="tab") Week 2
+                    li(role="presentation"): a(href="#week3", aria-controls="week3", role="tab", data-toggle="tab") Week 3
+                    li(role="presentation"): a(href="#week4", aria-controls="week4", role="tab", data-toggle="tab") Week 4
+
+
+                    // Last list item, which has a float of right and contains a dropdown, so you're able to organize the lessons by time or any other way.
+                    li.organize-lessons
+
+                        // Dropdown button, which you can see.
+                        .dropdown
+                            button#dropdownTime(type="button", data-toggle="dropdown", ara-haspopup="true", aria-expanded="false") By Month
+
+                                span.icon-icon-caret
+
+
+                            // Dropdown menu, which you can't see and it contains list items, so you're able to organize lessons differently.
+                            ul.dropdown-menu(aria-labelledby="dropdownTime")
+                                li: a(href="") Test 1
+                                li: a(href="") Test 2
+                                li: a(href="") Test 3
+
+
+                .container
+                    // Navigation tab content. It contains all the information, which is used in weeks, so that's the main part of the website.
+                    .tab-content
+
+                        // Week 1 - contains all the lessons and heading text with description and has a video in it.
+                        #week1.tab-pane.fade.in.active(role="tabpanel")
+
+
+                            .week-container
+                                h1 Week 1 - Introduction to Beyond Tells
+                                p The simple reality is that most players who are focusing on nonverbal behavior are not really interested. We really need to apply system 5 thinking. In order to focus on those actuall are when actually playing. The simple reality is that most players who are focusing on nonverbal behavior are not really interested. We really need to apply system 5 thinking.
+
+                                img.video(src="images/week-video.png", alt="Video")
+
+
+                                // Tables, h2 tag with heading text and below that the tables is created.
+                                h2 A. The Concepts
+                                table
+                                    tbody
+                                        +table-row('', '01', 'Introduction to Beyond Tells', 'Training', '15', '100')
+
+                                        +table-row('', '02', 'Practice Test #1', 'Training', '10', '25')
+
+                                        +table-row('', '03', 'Introduction to Beyond Tells', 'Walkthrough', '07', '0')
+
+                                        +table-row('', '04', 'Reinforcement Module #1', 'Practice', '03', '0')
+
+                                        // http://codepen.io/paulobrien/pen/ogejJj
+
+
+                                h2 B. The Concepts
+                                table
+                                    tbody
+                                        +table-row('', '05', 'Introduction to Beyond Tells', 'Training', '10', '25')
+
+                                        +table-row('', '06', 'Introduction to Beyond Tells', 'Walkthrough', '07', '0')
+
+                                        +table-row('', '07', 'Reinforcement Module #1', 'Practice', '03', '0')
+
+
+
+                                h2 C. The Concepts
+                                table
+                                    tbody
+                                        +table-row('ready', '08', 'Introduction to Beyond Tells', 'Assignment', '30', '0')
+
+                                        +table-row('ready', '09', 'Introduction to Beyond Tells', 'Summary', '30', '0')
+
+                                        +table-row-locked('10', 'Introduction to Beyond Tells', 'Comming Soon', 'Training', '30', '0')
+
+                                        +table-row-locked('11', 'Introduction to Beyond Tells', 'Premium', 'Training', '30', '0')
+
+
+
+
+
+
+
+
+                        #week2.tab-pane.fade(role="tabpanel") test 2
+                        #week3.tab-pane.fade(role="tabpanel") test 3
+                        #week4.tab-pane.fade(role="tabpanel") test 4
+
+
+
+        // jQuery 3.1.1
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+
+        // BootstrapJS 3.3.7
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js", integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous")
+
+        // Dragscroll.JS
+        script(src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js")
+
+        // Jquery Easing
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+
+        //- // Jquery Color Animation
+        //- script(src="js/color-animations.min.js")
+
+        // Bezier Easing JS
+        script(src="https://npmcdn.com/bezier-easing@2.0.3/dist/bezier-easing.min.js")
+
+        // Transit.JS
+        script(src="js/transit.min.js")
+
+        // Main JS
+        script(src="js/main.js")

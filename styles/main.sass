@@ -1,0 +1,128 @@
+// --- START of Global imports
+
+@import "icons" // Fonts and Icons from icoMoon
+@import "notifications" // Notifications for the index page and other pages.
+@import "form-inputs" // Form inputs with great animation
+@import "navigation" // The left side navigation, probably will be changed.
+@import "headers" // Header styles for both video and index page headers
+@import "week-labels" // Week selectors styles.
+@import "week" // Week styles, including video and description about it.
+@import "tables" // All the tables styles.
+@import "settings" // All the styles for settings pages
+@import "login" // All the styles for both login pages.
+@import "payments" // All the styles for both payments pages.
+@import "forum-inner" // All the styles for forum inner page.
+@import "forum-outer" // All the styles for forum outer page.
+@import "checkout" // All the styles for the checkout page.
+
+// END of Global imports ---
+
+
+
+// --- START of Video page styles
+
+// Stores styles for that full screen video background, container and footer.
+@import "video/full-screen-video"
+
+// Styles for video page comments.
+@import "video/discussion"
+
+// END of Video page styles ---
+
+
+
+// --- START of Modals styles
+
+// Modal content includes all the texts, buttons, answers, questions and other things that are in the modal.
+@import "modals/modal-content"
+
+// Modal footer that includes information about how many questions are there and how many of them are answered and the next and previous question buttons that are in the footer
+@import "modals/modal-footer"
+
+// Index modals contains two modals that are in the index page. They have different styles, so that's why they are separated from others.
+@import "modals/index-modals"
+
+// END of Modals styles ---
+
+
+
+// --- START of Responsiveness of the page
+
+// Video
+@import "responsiveness/video/screen-medium"
+@import "responsiveness/video/screen-small"
+@import "responsiveness/video/screen-mobile"
+
+// Settings
+@import "responsiveness/settings/screen-mobile"
+
+// Payments
+@import "responsiveness/payments/screen-medium"
+@import "responsiveness/payments/screen-small"
+@import "responsiveness/payments/screen-mobile"
+
+// Checkout
+@import "responsiveness/checkout/screen-medium"
+@import "responsiveness/checkout/screen-small"
+@import "responsiveness/checkout/screen-mobile"
+
+// Logins
+@import "responsiveness/logins/screen-mobile"
+
+// Forums
+@import "responsiveness/forums/screen-medium"
+@import "responsiveness/forums/screen-small"
+@import "responsiveness/forums/screen-mobile"
+
+// Index
+@import "responsiveness/screen-medium"
+@import "responsiveness/screen-small"
+@import "responsiveness/screen-mobile"
+
+// Modals
+@import "responsiveness/modals/screen-medium"
+@import "responsiveness/modals/screen-small"
+@import "responsiveness/modals/screen-mobile"
+
+// END of Responsiveness of the page ---
+
+
+
+*
+    font-family: 'Brandon Text', sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    text-rendering: optimizeLegibility
+    text-variant: small-caps
+    font-smoothing: subpixel-antialiased
+    font-stretch: normal
+
+body
+    overflow-x: hidden
+
+.fadeMe
+    width: 100%
+    height: 100%
+    z-index: 20
+    top: 0
+    left: 0
+    position: fixed
+    opacity: 0
+    background-color: hsla(0, 0%, 100%, 0.8)
+    display: none
+
+// Modals container max width
+.md-modal .md-content .modal-container .container,
+.md-modal .container
+    width: 100%
+    max-width: 595px
+
+.modal-answer-questions .md-content .modal-container .container
+    max-width: 660px
+
+.modal-start-test .md-content .modal-container .container
+    max-width: 655px
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav
+    box-shadow: none !important
+    line-height: 0

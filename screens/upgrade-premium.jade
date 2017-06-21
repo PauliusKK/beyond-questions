@@ -1,0 +1,58 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+        include ../mixins/mixins
+
+        section.upgrade-premium
+            .left-side
+                .triangle
+
+                .container
+                    img.video(src="../images/week-video.png", alt="Video")
+
+                    h5 1. Access to all content that is currently blocked
+                    p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff.
+
+                    h5 2. Access to all content that is currently blocked
+                    p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff.
+
+                    h5 3. Access to all content that is currently blocked
+                    p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff.
+
+                    h5 4. Access to all content that is currently blocked
+                    p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff.
+
+
+            .right-side
+
+                .container
+                    h2 Upgrade to Premium
+                    h3 We have a problem. Your monthly payment hasn't  processed for <strong>45 days</strong>. Please enter your information below to restore access.
+
+                    .gray-background
+                        h4 Your card will be charged <strong>$999</strong> today to restore access
+
+                    .select-card
+                        .round-button
+                        img(src="../images/visa.png", alt="")
+                        img(src="../images/mastercard.png", alt="")
+                        img(src="../images/amex.png", alt="")
+                        img(src="../images/discover.png", alt="")
+
+                    .select-paypal
+                        // paypal img
+
+                    +input-field('card_number', 'text', 'Card Number')
+                    +input-field('card_name', 'text', 'Name on Card')
+                    +input-field('cvv', 'text', 'CVV')
+
+                    button.btn-process-order Process Order
+                        i.icon-icon-lock
+
+                    p As soon as you process your order you will gain full access to Beyond Tells
+
+
+        include ../mixins/footer

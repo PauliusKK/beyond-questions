@@ -1,0 +1,88 @@
+.md-modal
+
+    footer
+        height: 70px
+        background-color: black
+        position: fixed
+        bottom: 0
+        width: 100%
+
+        .previous, .next
+            cursor: pointer
+            margin-top: 25px
+
+            span
+                color: white
+                font-size: 10px
+                font-weight: 300
+                letter-spacing: 1.7px
+                text-transform: uppercase
+                cursor: pointer
+
+                &:hover, &:focus, &:active
+                    color: #dddddd
+
+                span
+                    transform: rotate(180deg)
+                    font-size: 18px
+                    position: relative
+                    top: 1px
+
+        .previous
+            float: left
+            margin-left: 15px
+
+            span span
+                float: left
+                margin-right: 5px
+
+        .next
+            float: right
+            margin-right: 15px
+
+            span span
+                top: 4px
+                margin-left: 5px
+
+        .center-progress
+            width: 80%
+            margin: 0 auto
+            text-align: center
+            padding-top: 23px
+            position: absolute
+            right: 0
+            left: 0
+
+            ul
+                margin-top: -25px
+
+                li
+                    width: 40px
+                    height: 5px
+                    background-color: #3a3a3a
+                    cursor: pointer
+                    position: relative
+                    top: 28px
+
+                    .replay-box
+                        position: absolute
+                        left: 2px
+                        right: 0
+
+                        p
+                            text-transform: uppercase
+                            color: white
+                            font-size: 8px
+                            font-weight: 300
+                            letter-spacing: 0.9px
+                            margin-top: 10px
+                            display: none
+
+                            span
+                                font-size: 12px
+
+                li.correct
+                    background-color: #73be81
+
+                li.wrong
+                    background-color: #c74e4e

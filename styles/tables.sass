@@ -1,0 +1,160 @@
+section.weeks .container
+
+    .tab-content
+        .tab-pane
+            table
+                margin-bottom: 50px
+                margin-left: 0px
+                border-spacing: 3px
+                border-collapse: separate
+                margin: 0 auto
+
+                tbody
+                    tr
+                        cursor: pointer
+                        opacity: 0.1
+                        transition: all 800ms cubic-bezier(0.251, 0.095, 0.25, 1)
+
+                        &.loaded
+                            opacity: 1
+
+                        td
+                            background-color: rgba(0, 0, 0, 0.05)
+                            margin-left: 10px
+                            text-transform: uppercase
+                            font-weight: 500
+                            color: black
+                            font-family: 'Brandon Text', sans-serif
+                            height: 66px
+                            letter-spacing: 2.2px
+                            font-size: 14px
+                            min-width: 95px
+                            padding-top: 2px
+                            position: relative
+                            top: -20px
+                            transition: top 800ms cubic-bezier(0.251, 0.095, 0.25, 1), background-color 400ms ease
+
+                            &.loaded
+                                top: 0
+
+                        td.number
+                            width: 70px
+                            max-width: 70px
+                            min-width: 70px
+                            text-align: center
+
+                            span.text
+                                display: initial
+
+                            span.icon-icon-approved
+                                display: none
+
+                        td.length
+                            width: 95px
+                            max-width: 95px
+                            text-align: center
+
+                        td.watched-percentage
+                            width: 95px
+                            max-width: 95px
+                            text-align: center
+
+                        td.description
+                            width: 60%
+                            max-width: 730px
+                            padding-left: 25px
+
+                        td.mode
+                            width: 20%
+                            max-width: 260px
+                            text-align: center
+
+                        td.play-icon
+                            text-align: center
+                            width: 95px
+                            max-width: 95px
+
+                            span
+                                margin-right: -2px
+                                font-size: 15px
+
+                        td.favorite-star
+                            width: 95px
+                            max-width: 95px
+                            text-align: center
+
+                            span
+                                font-size: 20px
+                                top: 2px
+                                position: relative
+
+                    tr.watched
+
+                        td
+                            background-color: rgba(0, 0, 0, 0.1)
+
+                        td.number
+
+                            span.text
+                                display: none
+
+                            span.icon-icon-approved
+                                display: initial
+                                color: #96d394
+                                font-weight: bold
+
+
+                    tr.ready
+
+                        td.number
+
+                            span.text
+                                display: none
+
+                            span.icon-icon-approved
+                                display: initial
+                                color: black
+                                font-weight: bold
+
+
+                    tr.locked
+
+                        td
+                            background-color: #f7f7f7
+                            opacity: 0.4
+
+                        td.number
+
+                            span.text
+                                display: none
+
+                            span.icon-icon-lock
+                                display: initial
+                                color: #b1b1b1
+                                margin-left: 4px
+                                top: 2px
+                                font-size: 18px
+                                position: relative
+                                font-weight: bold
+
+                        td.description
+                            span.additional-text
+                                letter-spacing: 0.92px
+                                line-height: 15px
+                                font-size: 11px
+                                background-color: #dadada
+                                padding: 4px 8px
+                                box-shadow: 0 2px 4px rgba(185, 185, 185, 0.5)
+                                margin-left: 10px
+                                position: relative
+                                top: -2px
+
+                            span.icon-icon-question-mark
+                                color: #dadada
+                                font-size: 18px
+                                top: 4px
+                                left: 8px
+                                position: relative
+
+                        td.watched-percentage span
+                            display: none

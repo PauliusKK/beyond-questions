@@ -1,0 +1,43 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+        include ../mixins/mixins
+
+        section.no-payment
+            .left-side.no-payment-left
+
+            .right-side
+
+                .container
+                    h2 Oooops...
+                    h3 We have a problem. Your monthly payment hasn't  processed for <strong>45 days</strong>. Please enter your information below to restore access.
+
+                    .gray-background
+                        h4 Your card will be charged <strong>$99</strong> today to restore access
+
+                    .select-card
+                        .round-button
+                        img(src="../images/visa.png", alt="")
+                        img(src="../images/mastercard.png", alt="")
+                        img(src="../images/amex.png", alt="")
+                        img(src="../images/discover.png", alt="")
+
+
+                    .select-paypal
+                        //- img(src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/blue-pill-paypal-26px.png", alt="")
+                        // paypal img
+
+                    +input-field('card_number', 'text', 'Card Number')
+                    +input-field('card_name', 'text', 'Name on Card')
+                    +input-field('cvv', 'text', 'CVV')
+
+                    button.btn-process-order Process Order
+                        i.icon-icon-lock
+
+                    p As soon as you process your order you will gain full access to Beyond Tells
+
+
+        include ../mixins/footer

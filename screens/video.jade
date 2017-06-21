@@ -1,0 +1,152 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+
+        include ../mixins/mixins
+
+        // --- START of Modals
+
+        // Start test (Zeplin - Practice 2 - Step 1)
+        include ../mixins/modals/start-test
+
+        // Describe thoughts (Zeplin - Practice 2 - Step 3)
+        include ../mixins/modals/describe-thoughts
+
+        // Answer questions (what you saw) (Zeplin - Practice 2 - Step 4)
+        include ../mixins/modals/answer-questions
+
+        // Explanation (if your answer is correct) (Zeplin - Practice 1 - Step 4)
+        include ../mixins/modals/explanation
+
+        // Select answer (Zeplin - Practice 1 - Step 3)
+        include ../mixins/modals/select-answer
+
+        // Feedback (Zeplin - Video Copy 10 (that page with feedback modal))
+        include ../mixins/modals/feedback
+        include ../mixins/modals/all-modals
+
+        // END of Modals ---
+
+
+        // navigation
+        include ../mixins/navigation
+
+        section.video-content.content
+
+            section.full-height-video
+                header.main-header
+                    nav.navbar.navbar-default
+
+                        .navbar-header
+                            .navbar-brand.video-menu
+                                p.hidden-xs <span class="icon-icon-arrow left"></span> Practice Test #1 - Focusing on behavior is that <span class="icon-icon-arrow right"></span>
+
+                                p.visible-xs <span class="icon-icon-arrow left"></span> Practice Test #1 <span class="icon-icon-arrow right"></span>
+
+                                i.material-icons.menu-icon.visible-xs menu
+
+                        .collapse.navbar-collapse#navigation
+
+                            ul.nav.navbar-nav.navbar-left
+                                li: i.material-icons.menu-icon menu
+                                li: a(href="").week-identifier: span Week 1
+
+
+                .wistia-video
+                    .wistia_responsive_padding(style="padding: 56.25% 0 0 0; position: relative;")
+                        .wistia_responsive_wrapper(style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;")
+                            .wistia_embed.wistia_async_jxv4no0s6w(class="seo=false videoFoam=true", style="height: 100%; width: 100%;") &nbsp;
+
+
+                footer
+                    p Discuss <br />
+                        i.icon-icon-arrow
+
+
+            section.discussion
+
+                .container
+                    button.add-comment Add Comment
+                        span.icon-icon-plus
+
+
+                    .comments
+                        .comment
+                            .avatar
+                                img(src="../img/drake.jpg", alt="")
+                                span Paulius Kasiuba
+
+                            .description
+                                h5 In response to <span class="video-time">02:12</span>
+                                p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls, add url free and many other not only free but and qualitative sites, products and Kook-2 Directory give real links for your site. kook-2.com Add url free today.
+                                h6.reply reply / like
+
+
+                            .comment
+                                .avatar.admin
+                                    img(src="../img/drake.jpg", alt="")
+                                    span Paulius K
+
+                                .description
+                                    h5 In response to <span class="video-time">02:12</span>
+                                    p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls, add url free and many other not only free but and qualitative sites, products and Kook-2 Directory give real links for your site. kook-2.com Add url free today.
+                                    h6.reply reply / like
+
+                                    .reply
+                                        textarea(rows="6", placeholder="Say something...")
+                                        label
+                                            input(type="checkbox")
+                                            span.checkbox
+                                            span.text Link time to video
+
+
+                                        button.submit-reply Submit Reply
+
+                            .comment
+                                .avatar.admin
+                                    img(src="../img/drake.jpg", alt="")
+                                    span Paulius K
+
+                                .description
+                                    h5 In response to <span class="video-time">02:12</span>
+                                    p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls, add url free and many other not only free but and qualitative sites, products and Kook-2 Directory give real links for your site. kook-2.com Add url free today.
+                                    h6.reply reply / like
+
+
+                        .comment
+                            .avatar
+                                img(src="../img/drake.jpg", alt="")
+                                span Paulius Kasiuba
+
+                            .description
+                                h5 In response to <span class="video-time">02:12</span>
+                                p Kook-2 Directory give real links for your site. kook-2.com Add url free today. The Directory is known with links to site with many useful and free stuff. Find all what you search – free software, download movies, films, calls, add url free and many other not only free but and qualitative sites, products and Kook-2 Directory give real links for your site. kook-2.com Add url free today.
+                                h6.reply reply / like
+
+
+            section.submit-comment
+
+                .container
+
+                    .reply
+                        p Check out guidelines before posting
+                            span.icon-icon-question-mark
+                        textarea(rows="6", placeholder="Say something...")
+                        label
+                            input(type="checkbox")
+                            span.checkbox
+                            span.text Link time to video
+
+
+                        button.submit-reply Submit Comment
+
+
+
+
+        include ../mixins/footer
+
+        script(src="//fast.wistia.com/embed/medias/jxv4no0s6w.jsonp" async)
+        script(src="//fast.wistia.com/assets/external/E-v1.js" async)

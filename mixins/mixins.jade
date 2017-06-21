@@ -1,0 +1,125 @@
+mixin table-row(rowClass, number, description, mode, length, watchedPercentage)
+
+    tr(class=rowClass)
+        td.number
+            span.text #{number}
+            span.icon-icon-approved
+        td.description #{description}
+        td.mode #{mode}
+        td.play-icon: span.icon-video-icon
+        td.length #{length} min
+        td.watched-percentage #{watchedPercentage}%
+        td.favorite-star: span.icon-icon-star
+
+mixin table-row-locked(number, description, textInSpan, mode, length, watchedPercentage)
+
+    tr.locked.md-trigger
+        td.number
+            span.text #{number}
+            span.icon-icon-lock
+        td.description #{description} <span class="additional-text">#{textInSpan}</span> <span class="icon-icon-question-mark"></span>
+        td.mode #{mode}
+        td.play-icon: span.icon-video-icon
+        td.length #{length} min
+        td.watched-percentage: span #{watchedPercentage}%
+        td.favorite-star: span.icon-icon-star
+
+mixin modal-header(headerText)
+    header.main-header
+        nav.navbar.navbar-default
+
+            .navbar-header
+                .navbar-brand.video-menu
+                    p.hidden-xs
+                        span.text.left-text previous
+                            span.icon-icon-arrow.left
+
+                        | #{headerText}
+
+                        span.text.right-text next
+                            span.icon-icon-arrow.right
+
+                    p.visible-xs
+                        | #{headerText}
+
+                    i.material-icons.menu-icon.visible-xs menu
+
+            .collapse.navbar-collapse#navigation
+
+                ul.nav.navbar-nav.navbar-left
+                    li: i.material-icons.menu-icon menu
+                    li: a(href="").week-identifier: span Week 1
+
+
+mixin replay-box()
+    .replay-box: p <span class="material-icons">replay</span> replay
+
+mixin modal-footer()
+
+    footer
+
+        .previous
+            span.text.left-text previous question
+                span.icon-icon-arrow.left
+
+        .center-progress
+            ul.list-inline
+                li.wrong: +replay-box()
+                li.wrong: +replay-box()
+                li.wrong: +replay-box()
+                li.correct: +replay-box()
+                li.correct: +replay-box()
+                li.correct: +replay-box()
+                li.correct: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+                li: +replay-box()
+
+        .next
+            span.text.right-text next question
+                span.icon-icon-arrow.right
+
+mixin checkbox-label(text)
+    label.checkbox-label
+        input(type="checkbox")
+        span.checkbox
+        span.text #{text}
+
+mixin input-field(id, type, labelText)
+    .input-field(id=id)
+        input.validate(id=id, name=id, type=type)
+        label(for=id) #{labelText}
+
+mixin forum-post()
+    .forum-post
+        .avatar
+            img(src="../images/drake.jpg", alt="Profile Picture")
+
+        .description
+            h2 Welcome to Beyond Tells 2.0
+            p You have finally made it. This most important thing you did all year and why are you doing that.
+
+            h6 Posted by Blake - 17 Comments
+
+mixin site-heading(mainText)
+    header.main-header
+        nav.navbar.navbar-default
+
+            // Navigation header, which contains that "hamburger" menu
+            .navbar-header
+                button.home.btn-navigation(type='button')
+                    span.text #{mainText}
+                    span
+                    span
+                    span
+                    span

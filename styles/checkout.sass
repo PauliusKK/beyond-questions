@@ -1,0 +1,427 @@
+header.checkout-header .container
+    max-width: 1000px
+
+    img
+        display: block
+        margin: 0 auto
+
+    h3, p
+        text-align: center
+        font-style: normal
+        font-stretch: normal
+        letter-spacing: normal
+        color: black
+        margin: 0
+        padding: 0
+
+    h3
+        font-weight: 900
+        font-size: 30px
+        line-height: 1.13
+        margin-top: 30px
+
+    p
+        font-size: 18px
+        font-weight: 600
+        margin-top: 10px
+
+section.checkout-body
+    .container
+        max-width: 1000px
+        background-color: white
+        box-shadow: 0 20px 19px 9px #f7f7f7
+        border: 1px solid #f4f4f4
+        margin-top: 30px
+        padding-left: 40px
+        padding-right: 45px
+
+        .credentials
+            width: 52.5%
+            float: left
+            max-width: 480px
+            margin-bottom: 10px
+
+            h5
+                line-height: 2.13
+                letter-spacing: 0.8px
+                font-stretch: normal
+                font-style: normal
+                font-size: 16px
+                font-weight: 900
+                text-transform: uppercase
+                margin: 0
+                margin-bottom: 10px
+
+            .input-field
+                height: 50px
+                border-color: #d4d4d4
+                margin-bottom: 10px
+
+                input
+                    padding-top: 15px
+
+                label
+                    font-size: 14px
+                    letter-spacing: normal
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: normal
+                    top: 16px
+                    text-transform: none
+                    font-weight: 600
+                    color: black
+
+                label.active
+                    font-size: 13px
+                    top: 13px
+
+            .login-details
+                margin-top: 20px
+                overflow: auto
+                margin-bottom: 15px
+
+                .input-field label.active
+                    color: black !important
+
+            .payment-information
+                overflow: auto
+
+                .select-payment
+                    height: 50px
+                    width: 100%
+                    border: 1px solid #e6e6e6
+                    position: relative
+                    float: left
+                    margin-bottom: 20px
+
+                    .round-button
+                        border-radius: 100%
+                        border: 2px solid #c7c7c7
+                        background-color: white
+                        width: 20px
+                        height: 20px
+                        margin: auto
+                        position: absolute
+                        top: 0
+                        left: 18px
+                        bottom: 0
+                        cursor: pointer
+                        transition: all 0.15s linear
+
+                        &.active
+                            border: 8px solid #4ea0bf
+
+
+                    .paypal
+                        float: left
+                        width: 50%
+                        position: relative
+                        margin-top: 10px
+
+                        img
+                            float: right
+                            margin-right: 25px
+
+                        .round-button
+                            left: 27px
+
+                    .credit-card
+                        margin-top: 13px
+                        margin-bottom: 15px
+                        width: 50%
+                        float: left
+                        position: relative
+
+                        img
+                            height: 22px
+                            margin-right: 5px
+                            border: 1px solid #e6e6e6
+                            border-radius: 5px
+                            width: 40px
+                            position: relative
+                            box-shadow: none
+
+                        img:nth-child(2)
+                            margin-left: 55px
+
+                .card-credentials
+                    background-color: #fafafa
+                    border: 1px solid #e6e6e6
+                    overflow: auto
+                    padding: 25px 20px
+
+                    .input-field#card-name
+                        width: 45.5%
+                        max-width: 199px
+
+                    .input-field#card-expiration
+                        width: 29%
+                        max-width: 127px
+                        margin-left: 14.5px
+
+                    .input-field#card-cvv
+                        width: 19%
+                        max-width: 82.5px
+                        float: right
+
+                    .input-field
+                        margin-bottom: 0
+
+                        label
+                            color: #919191
+
+                            &:active
+                                color: #919191 !important
+
+                    .input-field:nth-child(1)
+                        margin-bottom: 10px
+
+        .checkout-cart
+            float: right
+            width: 42%
+            max-width: 380px
+            border: 2px solid #e4e4e4
+            margin-top: 63px
+
+            header
+                background-color: #f7f7f7
+                margin-bottom: 20px
+
+                h4, h6
+                    color: black
+                    font-style: normal
+                    font-stretch: normal
+                    line-height: normal
+                    letter-spacing: normal
+                    margin: 0
+                    padding-left: 30px
+
+                h4
+                    font-size: 25px
+                    font-weight: 900
+                    padding-top: 15px
+
+                h6
+                    font-size: 18px
+                    font-weight: 600
+                    padding-bottom: 15px
+
+
+            section.payments
+                max-width: 325px
+                display: block
+                margin: 0 auto
+
+                ul.nav-tabs
+                    text-align: center
+                    border: none
+                    width: 100%
+
+                    li
+                        background-color: #f3f3f3
+                        float: none
+                        display: inline-block
+                        margin-bottom: 30px
+                        width: 50%
+                        white-space: nowrap
+
+                        &:nth-child(2)
+                            margin-left: -6px
+
+                        &.active
+                            background-color: white
+
+                        a
+                            font-size: 13px
+                            font-weight: 600
+                            font-style: normal
+                            font-stretch: normal
+                            line-height: normal
+                            letter-spacing: normal
+                            color: black
+                            text-align: center
+                            border: 1px solid #f3f3f3
+                            border-radius: 0
+                            text-indent: -5px
+
+                            span
+                                background-color: #ececec
+                                border-radius: 2px
+                                font-size: 9px
+                                font-weight: 700
+                                color: #ce3232
+                                padding: 2px 5px
+                                position: relative
+                                top: -1px
+                                margin-left: 10px
+
+
+                .tab-content
+
+                    .tab-pane
+                        h5, p.price-description
+                            font-style: normal
+                            font-stretch: normal
+                            letter-spacing: normal
+                            color: black
+
+                        h5
+                            font-size: 18px
+                            font-weight: 600
+                            line-height: normal
+                            color: black
+                            width: 100%
+
+                            span
+                                float: right
+                                margin-right: 20px
+
+                        p.price-description
+                            font-size: 15px
+                            line-height: 1.73
+                            font-weight: 400
+                            color: black
+                            border-bottom: 1px solid #d9d9d9
+                            border-top: 1px solid #d9d9d9
+                            padding: 15px 0
+
+                        .amount-billed-today
+                            background-color: #f7f7f7
+                            height: 60px
+
+                            h3
+                                font-size: 16px
+                                font-weight: 700
+                                font-style: normal
+                                font-stretch: normal
+                                letter-spacing: normal
+                                line-height: 60px
+                                color: black
+                                margin-left: 20px
+
+                                span
+                                    float: right
+                                    margin-right: 20px
+
+                        p.money-back
+                            font-size: 15px
+                            font-weight: 600
+                            font-style: normal
+                            font-stretch: normal
+                            line-height: 1.33
+                            color: black
+                            letter-spacing: normal
+                            margin-top: 15px
+                            margin-bottom: 50px
+
+
+        .process-order-things
+            max-width: 480px
+            margin-bottom: 50px
+
+            .checkbox-div
+                margin-top: 10px
+
+                label.checkbox-label
+                    cursor: pointer
+                    color: black
+
+                    input
+                        display: none
+
+                    span.checkbox
+                        height: 22px
+                        width: 22px
+                        border: solid 2px #d4d4d4
+                        position: relative
+                        float: left
+
+                    span.text
+                        position: relative
+                        top: 13px
+                        left: 15px
+                        font-size: 15px
+                        font-weight: 300
+                        letter-spacing: normal
+                        color: black
+                        text-decoration: underline
+
+                    [type=checkbox]:checked + span.checkbox:before
+                        content: '\2714'
+                        position: absolute
+                        top: -2px
+                        left: 1px
+                        font-size: 18px
+
+
+            button.btn-process-order
+                border-radius: 11px
+                background-color: #db3131
+                height: 70px
+                width: 100%
+                color: white
+                border: none
+                font-size: 28px
+                letter-spacing: 0.8px
+                font-stretch: normal
+                font-style: normal
+                font-weight: 600
+                text-transform: uppercase
+                margin-top: 10px
+                transition: all 0.15s linear
+
+                &:active, &:focus, &:hover
+                    background-color: #ca2f2f
+
+            h4
+                font-weight: 800
+                font-size: 28px
+                letter-spacing: 0.6px
+                line-height: 1.21
+                font-stretch: normal
+                font-style: normal
+                text-transform: uppercase
+                white-space: nowrap
+                color: black
+                margin: 0
+                margin-top: 30px
+
+            p
+                font-weight: 400
+                color: #373737
+                letter-spacing: normal
+                line-height: 1.5
+                font-stretch: normal
+                font-style: normal
+                font-size: 16px
+                margin-top: 5px
+
+
+footer.checkout-footer
+    background-color: #ce3232
+    height: 80px
+    margin-top: 90px
+    text-align: center
+
+    ul
+        margin-bottom: 0
+
+        li
+            margin-left: 30px
+
+            &:first-child
+                margin-left: 0
+
+            a
+                font-size: 12px
+                font-weight: 400
+                font-style: normal
+                font-stretch: normal
+                line-height: 1
+                letter-spacing: 2px
+                color: white
+                text-transform: uppercase
+                line-height: 80px
+
+                &:hover
+                    text-decoration: none

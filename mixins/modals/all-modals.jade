@@ -1,0 +1,32 @@
+.md-modal.md-effect-12.modal-all-modals
+
+    include ../navigation
+
+    section.content
+
+        +modal-header("The most important moment for poker tells")
+
+        .md-content
+            .modal-container
+
+                .container
+                    h2 Press a button to open a particular modal
+
+                    .buttons
+
+                        .button: button.select-answer.black(name="modal-start-test") Start Test
+                        .button: button.select-answer.black(name="modal-describe-thoughts") Describe Thoughts
+                        .button: button.select-answer.correct(name="modal-answer-questions") Answer Questions
+                        .button: button.select-answer.wrong(name="modal-explanation") Explanation
+                        .button: button.select-answer.black(name="modal-select-answer") Select Answer
+                        .button: button.select-answer.black(name="modal-feedback") Feedback
+
+                    .skip-question.visible-xs: button Exit
+
+            .skip-question.hidden-xs: button Exit
+
+
+        +modal-footer()
+
+
+.md-overlay

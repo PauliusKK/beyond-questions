@@ -1,0 +1,87 @@
+.coming-soon-modal, .premium-content-modal
+    display: flex
+    align-items: center
+
+    .container
+        margin-top: -100px
+
+.md-modal
+    position: fixed
+    left: 0
+    right: 0
+    height: 100%
+    width: 100%
+    z-index: 2000
+    visibility: hidden
+    backface-visibility: hidden
+
+    i.md-close
+        position: absolute
+        right: 30px
+        top: 30px
+        cursor: pointer
+        font-size: 24px
+        color: black
+
+    .container
+        .md-content
+
+            h2
+                font-size: 17px
+                font-weight: 700
+                letter-spacing: 0.32px
+                line-height: 24px
+                text-transform: uppercase
+                margin: 0
+
+            p
+                color: #444
+                font-size: 22px
+                line-height: 32px
+                font-weight: 400
+                margin-top: 20px
+
+            button
+                box-shadow: 0 2px 4px rgba(153, 153, 153, 0.5)
+                border: 1px solid #979797
+                background-color: black
+                color: white
+                font-size: 17px
+                font-weight: 400
+                letter-spacing: 0.32px
+                line-height: 23px
+                padding: 10px 50px
+                margin-top: 40px
+                outline: none
+
+
+.md-show
+    visibility: visible
+
+.md-overlay
+    position: fixed
+    width: 100%
+    height: 100%
+    visibility: hidden
+    top: 0
+    left: 0
+    z-index: 1000
+    opacity: 0
+    background: white
+    transition: all 0.3s
+
+.md-show ~ .md-overlay
+    opacity: 1
+    visibility: visible
+
+.md-effect-12 .md-content
+    transform: scale(0.8)
+    opacity: 0
+    transition: all 0.3s
+
+.md-show.md-effect-12 ~ .md-overlay
+    background-color: white
+
+.md-show.md-effect-12 .md-content
+    transform: scale(1)
+    opacity: 1

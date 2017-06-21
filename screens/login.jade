@@ -1,0 +1,28 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+        include ../mixins/mixins
+
+        section.login
+            .left-side
+                h5 Beyond Tells
+
+            .right-side
+
+                .container
+                    h2 Login to the Beyond Tells 2.0 Training
+
+                    form.login-form
+                        +input-field('email', 'email', 'Email')
+                        +input-field('password', 'password', 'Password')
+
+                        button.login(type="submit") Login
+
+                    a.forgot-password(href="") Forgot your password?
+                    a.register(href="") Don’t have an account? Learn more here
+
+
+        include ../mixins/footer

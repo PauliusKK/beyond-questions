@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beyond Tells</title>
+    <!-- START of LINKS-->
+    <!-- Normalize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <!-- BootstrapCSS 3.3.7-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- START of FONTS-->
+    <!-- Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- END of FONTS-->
+    <!-- Main CSS file-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- END of LINKS-->
+  </head>
+  <body>
+    <!-- navigation and header-->
+    <div class="fadeMe"></div>
+    <nav class="menu-appear"><i class="icon-menu-close close-menu"></i>
+      <ul>
+        <li><a href="">Index</a></li>
+        <li><a href="">Forum</a></li>
+        <li><a href="">Support</a></li>
+        <li><a href="">Notifications</a></li>
+        <li><a href="">Settings</a></li>
+      </ul>
+      <footer><i class="icon-icon-logout"></i><span>Log Out</span></footer>
+    </nav>
+    <section class="content">
+          <header class="main-header">
+            <nav class="navbar navbar-default">
+              <!-- Navigation header, which contains that "hamburger" menu-->
+              <div class="navbar-header">
+                <button type="button" class="home btn-navigation"><span class="text">settings</span><span></span><span></span><span></span><span></span></button>
+              </div>
+            </nav>
+          </header>
+      <!-- Main part of the website, it contains all the stuff and has a great functionality of clicking on the each tab.-->
+      <section class="settings">
+        <div class="border"></div>
+        <div class="container">
+          <ul class="nav nav-tabs weeks-nav">
+            <li role="presentation" class="active"><a href="#pre-profile" aria-controls="pre-profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#pre-password" aria-controls="pre-password" role="tab" data-toggle="tab">Password</a></li>
+            <li role="presentation"><a href="#pre-notifications" aria-controls="pre-notifications" role="tab" data-toggle="tab">Notifications</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="pre-profile" role="tabpanel" class="tab-pane fade in active">
+              <div class="form-container">
+                <h5>Change your image (literally)</h5>
+                <form class="settings-form">
+                      <div id="first_name" class="input-field">
+                        <input id="first_name" name="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <div id="last_name" class="input-field">
+                        <input id="last_name" name="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                  <div id="user_name" class="input-field">
+                    <input id="user_name" name="user_name" type="text" class="validate">
+                    <label for="user_name">User Name (what people see on the platform)</label>
+                    <label for="user_name" class="max-420">User Name</label>
+                  </div>
+                      <div id="email" class="input-field">
+                        <input id="email" name="email" type="email" class="validate">
+                        <label for="email">E-mail</label>
+                      </div>
+                  <div class="image-container">
+                    <div class="image"></div>
+                    <!-- Blake said that you'll work on the functionality. I have done the same functionality for the other client before and if you will need any help, just let me know. - Paulius-->
+                    <button class="upload">Upload Photo<i class="icon-icon-upload"></i></button>
+                  </div>
+                  <button type="submit" class="btn-form-green">Save your changes</button>
+                </form>
+              </div>
+            </div>
+            <div id="pre-password" role="tabpanel" class="tab-pane fade">
+              <div class="form-container">
+                <h5>Change your password</h5>
+                <form class="password-form">
+                      <div id="current_password" class="input-field">
+                        <input id="current_password" name="current_password" type="password" class="validate">
+                        <label for="current_password">Current Password</label>
+                      </div>
+                      <div id="new_password" class="input-field">
+                        <input id="new_password" name="new_password" type="password" class="validate">
+                        <label for="new_password">New Password</label>
+                      </div>
+                      <div id="confirm_password" class="input-field">
+                        <input id="confirm_password" name="confirm_password" type="password" class="validate">
+                        <label for="confirm_password">Confirm Password</label>
+                      </div>
+                  <button type="submit" class="btn-form-green">Change Your Password</button>
+                </form>
+              </div>
+            </div>
+            <div id="pre-notifications" role="tabpanel" class="tab-pane fade">
+              <div class="form-container">
+                <h5>E-mail notifications</h5>
+                <div class="checkbox-div">
+                      <label class="checkbox-label">
+                        <input type="checkbox"><span class="checkbox"></span><span class="text">New content is released</span>
+                      </label>
+                </div>
+                <div class="checkbox-div">
+                      <label class="checkbox-label">
+                        <input type="checkbox"><span class="checkbox"></span><span class="text">Someone responds to your message</span>
+                      </label>
+                </div>
+                <div class="checkbox-div">
+                      <label class="checkbox-label">
+                        <input type="checkbox"><span class="checkbox"></span><span class="text">Weekly check ins</span>
+                      </label>
+                </div>
+                <button class="btn-form-green">Save your changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- jQuery 3.1.1-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- BootstrapJS 3.3.7-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Main JS-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

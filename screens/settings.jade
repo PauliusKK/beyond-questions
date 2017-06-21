@@ -1,0 +1,86 @@
+doctype html
+html(lang='en-US')
+    head
+        include ../mixins/head
+
+    body
+        include ../mixins/mixins
+
+
+        // navigation and header
+        include ../mixins/navigation
+        section.content
+            +site-heading("settings")
+
+            // Main part of the website, it contains all the stuff and has a great functionality of clicking on the each tab.
+            section.settings
+
+                .border
+
+                .container
+
+                    ul.nav.nav-tabs.weeks-nav
+                        li.active(role="presentation"): a(href="#pre-profile", aria-controls="pre-profile", role="tab", data-toggle="tab") Profile
+
+                        li(role="presentation"): a(href="#pre-password", aria-controls="pre-password", role="tab", data-toggle="tab") Password
+
+                        li(role="presentation"): a(href="#pre-notifications", aria-controls="pre-notifications", role="tab", data-toggle="tab") Notifications
+
+
+                    .tab-content
+
+
+                        #pre-profile.tab-pane.fade.in.active(role="tabpanel")
+
+                            .form-container
+                                h5 Change your image (literally)
+
+                                form.settings-form
+                                    +input-field('first_name', 'text', 'First Name')
+                                    +input-field('last_name', 'text', 'Last Name')
+
+                                    .input-field(id="user_name")
+                                        input.validate(id="user_name", name="user_name", type="text")
+                                        label(for="user_name") User Name (what people see on the platform)
+                                        label.max-420(for="user_name") User Name
+
+                                    +input-field('email', 'email', 'E-mail')
+
+                                    .image-container
+                                        .image
+                                        // Blake said that you'll work on the functionality. I have done the same functionality for the other client before and if you will need any help, just let me know. - Paulius
+
+                                        button.upload Upload Photo
+                                            i.icon-icon-upload
+
+                                    button.btn-form-green(type="submit") Save your changes
+
+
+
+                        #pre-password.tab-pane.fade(role="tabpanel")
+
+                            .form-container
+                                h5 Change your password
+
+                                form.password-form
+                                    +input-field('current_password', 'password', 'Current Password')
+                                    +input-field('new_password', 'password', 'New Password')
+                                    +input-field('confirm_password', 'password', 'Confirm Password')
+
+                                    button.btn-form-green(type="submit") Change Your Password
+
+
+
+                        #pre-notifications.tab-pane.fade(role="tabpanel")
+
+                            .form-container
+                                h5 E-mail notifications
+
+                                .checkbox-div: +checkbox-label("New content is released")
+                                .checkbox-div: +checkbox-label("Someone responds to your message")
+                                .checkbox-div: +checkbox-label("Weekly check ins")
+
+                                button.btn-form-green Save your changes
+
+
+        include ../mixins/footer

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beyond Tells</title>
+    <!-- START of LINKS-->
+    <!-- Normalize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <!-- BootstrapCSS 3.3.7-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- START of FONTS-->
+    <!-- Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- END of FONTS-->
+    <!-- Main CSS file-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- END of LINKS-->
+  </head>
+  <body>
+    <section class="no-payment">
+      <div class="left-side no-payment-left"></div>
+      <div class="right-side">
+        <div class="container">
+          <h2>Oooops...</h2>
+          <h3>We have a problem. Your monthly payment hasn't  processed for <strong>45 days</strong>. Please enter your information below to restore access.</h3>
+          <div class="gray-background">
+            <h4>Your card will be charged <strong>$99</strong> today to restore access</h4>
+          </div>
+          <div class="select-card">
+            <div class="round-button"></div><img src="../images/visa.png" alt=""><img src="../images/mastercard.png" alt=""><img src="../images/amex.png" alt=""><img src="../images/discover.png" alt="">
+          </div>
+          <div class="select-paypal">
+            <!-- paypal img-->
+          </div>
+              <div id="card_number" class="input-field">
+                <input id="card_number" name="card_number" type="text" class="validate">
+                <label for="card_number">Card Number</label>
+              </div>
+              <div id="card_name" class="input-field">
+                <input id="card_name" name="card_name" type="text" class="validate">
+                <label for="card_name">Name on Card</label>
+              </div>
+              <div id="cvv" class="input-field">
+                <input id="cvv" name="cvv" type="text" class="validate">
+                <label for="cvv">CVV</label>
+              </div>
+          <button class="btn-process-order">Process Order<i class="icon-icon-lock"></i></button>
+          <p>As soon as you process your order you will gain full access to Beyond Tells</p>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery 3.1.1-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- BootstrapJS 3.3.7-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Main JS-->
+    <script src="../js/main.js"></script>
+  </body>
+</html>

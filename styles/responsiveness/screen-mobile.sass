@@ -1,0 +1,170 @@
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) and (max-width: 767px)
+    ::i-block-chrome, .section.video-content section.full-height-video footer
+        bottom: 60px
+
+    _::-webkit-:host:not(:root:root), .section.video-content section.full-height-video footer
+        bottom: 60px
+
+    _::-webkit-:-webkit-full-screen:host:not(:root:root), .section.video-content section.full-height-video footer
+        bottom: 60px
+
+    _::-webkit-:not(:root:root), .section.video-content section.full-height-video footer
+        bottom: 60px
+
+
+// @supports (overflow:-webkit-marquee) and (justify-content:inherit) and (max-width: 767px)
+//     .section.video-content section.full-height-video footer
+//             bottom: 60px
+
+// @supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto))
+// and (not (-moz-appearance:none)) and (max-width: 767px)
+//     .section.video-content section.full-height-video footer
+//             bottom: 60px
+
+
+@media screen and (max-width: 767px)
+
+    section.content:not(.video-content)
+
+        .navbar-collapse
+            width: auto
+            border-top: 0
+            box-shadow: none
+
+        .navbar-collapse.collapse
+            display: block !important
+            height: auto !important
+            padding-bottom: 0
+            overflow: visible !important
+
+        .navbar-nav
+            margin: 0 !important
+
+        .navbar-left, .navbar-header
+            float: left !important
+
+        .navbar-nav>li>a
+            padding-top: 15px
+            padding-bottom: 15px
+
+        section.content header.main-header nav.navbar #navigation ul.nav, section.video-content nav.navbar #navigation ul.nav, .md-modal header nav.navbar #navigation ul.nav
+            margin-left: -15px !important
+
+
+    ul.weeks-nav
+        overflow-x: scroll
+        overflow-y: hidden
+        white-space: nowrap
+        margin-left: 0px !important
+
+        li[role="presentation"]
+            float: none
+            display: inline-block
+
+            &:first-child
+                margin-left: 25px !important
+
+            &:nth-last-child(2)
+                margin-right: 25px
+
+        li.organize-lessons
+            float: none !important
+            display: inline-block
+            margin: 0
+            background-color: white
+
+            // ul.dropdown-menu
+            //     position: fixed
+            //     right: 5%
+            //     left: 58%
+            //     top: 110px
+
+
+    section.weeks .container, section.forum-outer .container,
+    section.settings .container
+        padding: 0 15px
+
+        .tab-content .tab-pane
+
+            .week-container
+
+                p
+                    padding: 0
+
+                img.video
+                    position: relative
+                    display: block
+                    margin: 0 auto
+                    top: 0
+                    margin-top: 25px
+                    margin-bottom: 25px
+
+                h2
+                    margin-left: 3px
+
+                table
+                    margin-left: 0px
+                    width: 100%
+
+                    tbody tr
+
+                        td
+                            padding-top: 10px
+                            padding-bottom: 10px
+
+                        td.number
+                            max-width: 50px
+
+                        td.mode
+                            padding: 0 15px
+
+                        td.description
+                            padding-left: 20px
+                            padding-right: 20px
+
+                            span.additional-text
+                                white-space: nowrap
+                                margin-left: 0
+                                top: 0
+
+                        td.length
+                            text-align: center
+                            max-width: 85px
+
+                        td.watched-percentage
+                            max-width: 75px
+
+                        td.play-icon, td.favorite-star
+                            max-width: 55px
+
+                        td.play-icon span
+                            position: relative
+                            top: 3px
+
+
+
+// Table row responsiveness, showing more stuff while increasing the width of the browser/screen.
+@media screen and (max-width: 350px)
+    section.weeks .container .tab-content .tab-pane .week-container table
+        width: 112%
+        margin-left: -14px
+
+@media screen and (max-width: 490px)
+    section.weeks .container .tab-content .tab-pane .week-container table tbody tr
+        td.mode, td.length, td.watched-percentage, td.favorite-star
+            display: none
+
+@media screen and (min-width: 490px) and (max-width: 580px)
+    section.weeks .container .tab-content .tab-pane .week-container table tbody tr
+        td.mode, td.watched-percentage, td.favorite-star
+            display: none
+
+@media screen and (min-width: 580px) and (max-width: 690px)
+    section.weeks .container .tab-content .tab-pane .week-container table tbody tr
+        td.mode, td.favorite-star
+            display: none
+
+@media screen and (min-width: 690px) and (max-width: 768px)
+    section.weeks .container .tab-content .tab-pane .week-container table tbody tr
+        td.mode
+            display: none

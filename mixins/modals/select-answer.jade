@@ -1,0 +1,47 @@
+.md-modal.md-effect-12.modal-select-answer
+
+    include ../navigation
+
+    section.content
+
+        +modal-header("The most important moment for poker tells")
+
+        .md-content
+            .modal-container
+
+                .container
+                    p.question-number 1 / 10 - explination
+
+                    h2 Based on what you are seeing what is the most probable outcome for what you are seeing?
+
+                    .buttons
+
+                        .button
+                            button.select-answer.black Delayed Apex
+                                span.letter A
+
+                        .button
+                            button.select-answer.black Delayed Apex
+                                span.letter C
+
+                        .button
+                            button.select-answer.correct Delayed Apex
+                                span.letter B
+
+                        .button
+                            button.select-answer.wrong Delayed Apex
+                                span.letter C
+
+                    .replay-video.visible-xs
+                        button.replay-video-button Replay Video
+                            span.icon-icon-rewatch
+
+            .replay-video.hidden-xs
+                button.replay-video-button Replay Video
+                    span.icon-icon-rewatch
+
+
+        +modal-footer()
+
+
+.md-overlay
